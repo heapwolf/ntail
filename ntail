@@ -1,0 +1,14 @@
+#!/usr/bin/env node
+const split = require('split2')
+const inspect = require('util').inspect
+const chalk = require('chalk')
+
+const opts = { colors: true, depth: null }
+
+process.stdin.pipe(split()).on('data', line => {
+  try {
+    console.log(inspect(JSON.parse(line.trim()), opts) + '\n')
+  } catch (ex) {
+    console.log(chalk.gray(line))
+  }
+})
