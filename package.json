@@ -1,8 +1,11 @@
 {
   "name": "ntail",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "tolerant tailing for your new line delimited json output",
-  "bin": "ntail",
+  "bin": {
+    "ntail": "./ntail"
+  },
+  "preferGlobal": true,
   "dependencies": {
     "chalk": "^1.1.3",
     "split2": "^2.1.1"
@@ -12,5 +15,14 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0x00A/ntail.git"
+  },
+  "bugs": {
+    "url": "https://github.com/0x00A/ntail/issues"
+  },
+  "homepage": "https://github.com/0x00A/ntail#readme"
 }
