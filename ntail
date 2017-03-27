@@ -9,6 +9,6 @@ process.stdin.pipe(split()).on('data', line => {
   try {
     console.log(inspect(JSON.parse(line.trim()), opts) + '\n')
   } catch (ex) {
-    console.log(chalk.gray(line))
+    if (process.argv[2] !== '--mute') console.log(chalk.gray(line))
   }
 })

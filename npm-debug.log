@@ -1,0 +1,61 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'ntail',
+1 verbose cli   '-g' ]
+2 info using npm@4.1.2
+3 info using node@v7.7.3
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 silly fetchPackageMetaData ntail
+8 silly fetchOtherPackageData ntail
+9 silly cache add args [ 'ntail', null ]
+10 verbose cache add spec ntail
+11 silly cache add parsed spec Result {
+11 silly cache add   raw: 'ntail',
+11 silly cache add   scope: null,
+11 silly cache add   escapedName: 'ntail',
+11 silly cache add   name: null,
+11 silly cache add   rawSpec: 'ntail',
+11 silly cache add   spec: '/Users/paolofragomeni/workroot/0x00a/ntail/ntail',
+11 silly cache add   type: 'local' }
+12 silly addLocalTarball shasum (computed) 34c0db111d61013888ea27b8f819005aac0ce760
+13 verbose addTmpTarball /Users/paolofragomeni/workroot/0x00a/ntail/ntail not in flight; adding
+14 verbose correctMkdir /Users/paolofragomeni/.npm correctMkdir not in flight; initializing
+15 verbose addTmpTarball validating metadata from /Users/paolofragomeni/workroot/0x00a/ntail/ntail
+16 verbose tar unpack /Users/paolofragomeni/workroot/0x00a/ntail/ntail
+17 verbose tar unpacking to /var/folders/y_/st5znl71727b60hwpqz69xs00000gn/T/npm-8473-ff134de0/unpack-5590dfcc
+18 silly gentlyRm /var/folders/y_/st5znl71727b60hwpqz69xs00000gn/T/npm-8473-ff134de0/unpack-5590dfcc is being purged
+19 verbose gentlyRm don't care about contents; nuking /var/folders/y_/st5znl71727b60hwpqz69xs00000gn/T/npm-8473-ff134de0/unpack-5590dfcc
+20 silly gunzTarPerm modes [ '755', '644' ]
+21 error not a package /Users/paolofragomeni/workroot/0x00a/ntail/ntail
+22 error addLocal Could not install /Users/paolofragomeni/workroot/0x00a/ntail/ntail
+23 silly fetchPackageMetaData Error: ENOENT: no such file or directory, open '/var/folders/y_/st5znl71727b60hwpqz69xs00000gn/T/npm-8473-ff134de0/unpack-5590dfcc/package.json'
+23 silly fetchPackageMetaData  error for ntail { Error: ENOENT: no such file or directory, open '/var/folders/y_/st5znl71727b60hwpqz69xs00000gn/T/npm-8473-ff134de0/unpack-5590dfcc/package.json'
+23 silly fetchPackageMetaData   errno: -2,
+23 silly fetchPackageMetaData   code: 'ENOENT',
+23 silly fetchPackageMetaData   syscall: 'open',
+23 silly fetchPackageMetaData   path: '/var/folders/y_/st5znl71727b60hwpqz69xs00000gn/T/npm-8473-ff134de0/unpack-5590dfcc/package.json' }
+24 silly rollbackFailedOptional Starting
+25 verbose stack TypeError: Cannot read property 'path' of null
+25 verbose stack     at Installer.rollbackFailedOptional (/usr/local/lib/node_modules/npm/lib/install.js:511:29)
+25 verbose stack     at Array.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/slide/lib/bind-actor.js:15:8)
+25 verbose stack     at LOOP (/usr/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:15:14)
+25 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:18:7
+25 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:337:5
+25 verbose stack     at Array.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/slide/lib/bind-actor.js:15:8)
+25 verbose stack     at LOOP (/usr/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:15:14)
+25 verbose stack     at chain (/usr/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:20:5)
+25 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:294:5
+25 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:16:22
+26 verbose cwd /Users/paolofragomeni/workroot/0x00a/ntail
+27 error Darwin 16.3.0
+28 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "ntail" "-g"
+29 error node v7.7.3
+30 error npm  v4.1.2
+31 error Cannot read property 'path' of null
+32 error If you need help, you may report this error at:
+32 error     <https://github.com/npm/npm/issues>
+33 verbose exit [ 1, true ]
