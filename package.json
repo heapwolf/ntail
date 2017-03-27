@@ -1,6 +1,6 @@
 {
   "name": "ntail",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "tolerant tailing for your new line delimited json output",
   "bin": {
     "ntail": "./ntail"
